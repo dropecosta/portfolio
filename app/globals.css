@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 24% 98%;
+  --foreground: 220 32% 9%;
+  --muted: 214 20% 92%;
+  --muted-foreground: 218 12% 42%;
+  --border: 215 18% 84%;
+  --input: 215 18% 80%;
+  --ring: 173 78% 42%;
+  --primary: 173 78% 38%;
+  --primary-foreground: 180 18% 97%;
+  --surface: 0 0% 100%;
+  --surface-strong: 210 28% 94%;
+  --accent: 258 58% 58%;
+  --accent-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 220 27% 6%;
+  --foreground: 210 24% 96%;
+  --muted: 220 18% 14%;
+  --muted-foreground: 216 10% 68%;
+  --border: 218 16% 20%;
+  --input: 218 16% 24%;
+  --ring: 173 78% 46%;
+  --primary: 173 78% 46%;
+  --primary-foreground: 184 70% 7%;
+  --surface: 220 23% 9%;
+  --surface-strong: 220 18% 13%;
+  --accent: 39 92% 58%;
+  --accent-foreground: 38 56% 9%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 12%, hsl(var(--primary) / 0.16), transparent 28rem),
+    radial-gradient(circle at 82% 8%, hsl(var(--accent) / 0.12), transparent 24rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.32);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.prose-custom {
+  color: hsl(var(--foreground));
+}
+
+.prose-custom p {
+  margin: 1.25rem 0;
+  line-height: 1.8;
+  color: hsl(var(--muted-foreground));
+}
