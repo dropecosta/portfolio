@@ -226,7 +226,7 @@ export function HomeClient({ articlesByLocale }: { articlesByLocale: LocalizedAr
         </div>
       </Section>
 
-      <Section eyebrow={t.home.trustEyebrow} title={t.home.trustTitle}>
+      {/* <Section eyebrow={t.home.trustEyebrow} title={t.home.trustTitle}>
         <div className="grid gap-5 md:grid-cols-2">
           {testimonials.map((item) => (
             <Card key={item.author}>
@@ -240,7 +240,7 @@ export function HomeClient({ articlesByLocale }: { articlesByLocale: LocalizedAr
             </Card>
           ))}
         </div>
-      </Section>
+      </Section> */}
 
       <Section eyebrow={t.home.latestEyebrow} title={t.home.latestTitle}>
         <div className="grid gap-5 md:grid-cols-3">
