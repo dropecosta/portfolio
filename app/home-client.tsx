@@ -60,10 +60,10 @@ export function HomeClient({ articlesByLocale }: { articlesByLocale: LocalizedAr
           <FadeIn className="relative">
             <div className="aspect-square overflow-hidden rounded-[2rem] border border-border bg-surface shadow-glow">
               <div className="flex h-full flex-col justify-between p-8">
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground">{t.home.profileLabel}</span>
                   <span className="h-3 w-3 rounded-full bg-primary" />
-                </div>
+                </div> */}
                 <div>
                   <div className="grid h-28 w-28 place-items-center rounded-2xl bg-primary text-4xl font-semibold text-primary-foreground">
                     PR

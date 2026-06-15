@@ -7,8 +7,28 @@ tags: [Performance, SEO, Analytics]
 published: true
 ---
 
-Core Web Vitals ajudam equipas a falar sobre experiência com dados concretos. LCP, INP e CLS mostram onde a interface falha antes mesmo de o utilizador conseguir explicar o problema.
+## Introdução
 
-O trabalho mais eficaz começa por páginas de maior impacto, define budgets e mede regressões no pipeline. Performance passa a ser uma propriedade do sistema.
+Core Web Vitals transformam medições técnicas em sinais acionáveis para produto: LCP (Largest Contentful Paint) indica a velocidade de apresentação do conteúdo principal, INP (Interaction to Next Paint) mensura responsividade, e CLS (Cumulative Layout Shift) avalia estabilidade visual.
 
-Quando a equipa olha para velocidade como qualidade de produto, as decisões de arquitetura ficam mais maduras.
+## Medir em laboratório e em campo
+
+Combine testes sintéticos (lab) com RUM (field). Testes controlados facilitam diagnóstico; RUM revela impacto real em dispositivos e condições de rede variadas.
+
+## Priorizar por impacto
+
+Identifique páginas que geram tráfego e receita, defina budgets mensuráveis e implemente checks automáticos no pipeline para bloquear regressões.
+
+## Intervenções práticas
+
+- Otimize imagens: formatos modernos, responsive images e compressão.
+- Priorize recursos críticos e minimize JS no caminho crítico.
+- Use caching agressivo para ativos estáticos e políticas de revalidação apropriadas.
+
+## Integração com produto
+
+Correlacione Core Web Vitals com métricas de negócio (conversão, retenção). Definir propriedade clara entre frontend, infraestrutura e produto ajuda a priorizar trade-offs.
+
+## Conclusão
+
+Ao tornar performance uma propriedade do produto, equipas equilibram velocidade, funcionalidades e custo, entregando melhorias sustentáveis ao longo do tempo.

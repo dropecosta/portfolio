@@ -18,19 +18,19 @@ export const siteConfig = {
   title: "Senior Software Engineer | Frontend Specialist | Full Stack Developer",
   description:
     "Senior Software Engineer com mais de 10 anos de experiência em Frontend, Full Stack, performance, SEO, acessibilidade e arquitetura de produto.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://pedroreis.dev",
-  email: "hello@pedroreis.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.linkedin.com/in/dropecosta/",
+  email: "dropecosta@gmail.com",
   links: {
-    github: "https://github.com/pedroreis",
-    linkedin: "https://www.linkedin.com/in/pedroreis",
+    github: "https://github.com/dropecosta",
+    linkedin: "https://www.linkedin.com/in/dropecosta",
     cv: "/cv/pedro-reis-cv.pdf"
   }
 };
 
 export const stats = [
   { value: "10+", label: "anos de experiência" },
-  { value: "50+", label: "projetos entregues" },
-  { value: "20+", label: "clientes e empresas" }
+  { value: "10+", label: "projetos entregues" },
+  { value: "10+", label: "clientes e empresas" }
 ];
 
 export const companies = ["AMA", "Comboios de Portugal", "Rádio Popular", "Capgemini", "CI&T", "Fintech", "Media"];
@@ -126,62 +126,224 @@ export const projectCategories = ["All", "Frontend", "Full Stack", "E-commerce",
 
 export const projects = [
   {
-    slug: "citizen-services-platform",
-    name: "Citizen Services Platform",
-    category: "Government",
-    description: "Modernização de serviços públicos digitais com foco em acessibilidade, performance e clareza de fluxos.",
-    technologies: ["React", "TypeScript", "Accessibility", "Design Systems"],
-    challenge: "Unificar experiências complexas para públicos diversos sem comprometer conformidade e usabilidade.",
-    solution: "Arquitetura de componentes acessíveis, padrões de formulário reutilizáveis e revisão de performance por fluxo.",
-    results: ["AA-ready UI", "Menos fricção em formulários", "Base escalável para novas jornadas"],
+    slug: "vodafone-digital-products",
+    name: "Vodafone Digital Products",
+    category: "Frontend",
+    description:
+      "Desenvolvimento e evolucao continua de solucoes frontend para produtos digitais Vodafone, em colaboracao com a Celfocus na GBL Tech.",
+    technologies: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Accessibility"],
+    challenge:
+      "Evoluir interfaces customer-facing em ambiente enterprise, garantindo escalabilidade, manutencao, performance e consistencia da experiencia.",
+    solution:
+      "Entrega de novas funcionalidades, otimizacao de jornadas digitais, estruturacao de arquitetura frontend e criacao de componentes reutilizaveis.",
+    results: ["Jornadas digitais mais fluidas", "Padroes UI reutilizaveis e escalaveis", "Melhorias de performance, responsividade e acessibilidade"],
     demo: "#",
     github: null
   },
   {
-    slug: "commerce-performance-system",
-    name: "Commerce Performance System",
+    slug: "comboios-de-portugal-pwa",
+    name: "Comboios de Portugal PWA",
+    category: "Frontend",
+    description:
+      "Desenvolvimento da nova aplicacao da Comboios de Portugal, uma Progressive Web App em React para melhorar servicos digitais de mobilidade.",
+    technologies: ["React", "PWA", "JavaScript", "Accessibility", "Real-time APIs"],
+    challenge:
+      "Criar uma experiencia rapida, eficiente e fiavel para consulta de horarios, bilhetica e utilizacao mobile-first.",
+    solution:
+      "Implementacao PWA, desenvolvimento React, integracao de APIs em tempo real, otimizacao para acesso offline e carregamento rapido.",
+    results: ["Experiencia mobile mais rapida", "Acesso offline via PWA", "Informacao de horarios e bilhetes mais atualizada", "Maior foco em acessibilidade"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "radio-popular-ecommerce",
+    name: "Radio Popular E-commerce",
     category: "E-commerce",
-    description: "Sistema de experiência e performance para loja online com forte dependência de SEO e conversão.",
-    technologies: ["Next.js", "React", "SEO", "Analytics", "Core Web Vitals"],
-    challenge: "Melhorar descoberta orgânica e velocidade percebida em páginas com catálogo extenso.",
-    solution: "Rendering híbrido, lazy loading inteligente, otimização de imagens e instrumentação de métricas.",
-    results: ["Melhores Core Web Vitals", "Experiência mobile mais fluida", "Base SEO mais robusta"],
+    description:
+      "Desenvolvimento e otimizacao da plataforma e-commerce da Radio Popular, uma das principais retalhistas portuguesas de eletronica e eletrodomesticos.",
+    technologies: ["Vanilla JavaScript", "PHP", "HTML", "CSS", "Performance"],
+    challenge:
+      "Melhorar uma plataforma de comercio eletronico com foco em responsividade, pesquisa, filtros inteligentes e experiencia de compra.",
+    solution:
+      "Implementacao de funcionalidades dinamicas, pesquisa avancada, smart filters, otimizacoes de performance e colaboracao proxima com UI/UX.",
+    results: ["Experiencia de compra mais fluida", "Pesquisa e filtros mais eficientes", "Melhores tempos de carregamento", "Interface mais intuitiva e acessivel"],
     demo: "#",
     github: null
   },
   {
-    slug: "frontend-foundation-kit",
-    name: "Frontend Foundation Kit",
-    category: "Open Source",
-    description: "Kit de arquitetura para equipas React com linting, testes, tokens, CI e documentação.",
-    technologies: ["React", "TypeScript", "Vitest", "Playwright", "GitHub Actions"],
-    challenge: "Acelerar novos projetos mantendo standards de qualidade e DX.",
-    solution: "Templates opinativos, componentes base, pipelines e documentação de decisões técnicas.",
-    results: ["Onboarding mais rápido", "Menos variação acidental", "Qualidade repetível"],
+    slug: "citizen-services-platform",
+    name: "Portal Unico - E-Portugal",
+    category: "Government",
+    description:
+      "Contribuicao para a nova versao do Portal Unico - E-Portugal, uma plataforma publica essencial para modernizar e simplificar o acesso a servicos digitais em Portugal.",
+    technologies: ["Next.js", "React", "TypeScript", "ES6+", "Accessibility", "Jira"],
+    challenge:
+      "Evoluir uma plataforma governamental de grande visibilidade, garantindo acessibilidade, performance, qualidade tecnica e uma experiencia clara para cidadaos.",
+    solution:
+      "Desenvolvimento frontend com Next.js, TypeScript e ES6+, metodologias ageis com Jira, otimizacao de performance e acessibilidade, e testes unitarios.",
+    results: ["Servicos publicos digitais mais acessiveis", "Melhor performance e experiencia de utilizador", "Maior estabilidade atraves de testes unitarios"],
     demo: "#",
-    github: "https://github.com/pedroreis"
+    github: null
   },
   {
-    slug: "media-content-platform",
-    name: "Media Content Platform",
+    slug: "ama-public-services-ignit",
+    name: "AMA Public Digital Services",
+    category: "Government",
+    description:
+      "Colaboracao com a AMA atraves da IGNIT em servicos digitais publicos, com foco em React, Next.js, acessibilidade, performance e experiencia de utilizador.",
+    technologies: ["Next.js", "TypeScript", "Storybook", "Tailwind", "BEM", "Jira"],
+    challenge:
+      "Construir interfaces publicas modernas e inclusivas mantendo qualidade, consistencia visual e capacidade de evolucao.",
+    solution:
+      "Criacao de componentes responsivos e manuteniveis, uso de Storybook, praticas ageis, otimizacao de performance e testes unitarios.",
+    results: ["Interfaces publicas mais acessiveis", "Componentes frontend mais consistentes", "Maior qualidade e fiabilidade de entrega"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "contentful-saas-platform",
+    name: "Contentful SaaS Platform",
+    category: "Frontend",
+    description:
+      "Desenvolvimento de funcionalidades e arquitetura frontend para a plataforma SaaS global da Contentful durante a colaboracao com a Capgemini Engineering.",
+    technologies: ["React.js", "TypeScript", "Redux Toolkit", "Jest", "React Testing Library"],
+    challenge:
+      "Evoluir uma plataforma global de headless CMS com requisitos fortes de escalabilidade, usabilidade e alinhamento com UX.",
+    solution:
+      "Implementacao de novas funcionalidades, definicao de standards tecnicos, otimizacao de performance e colaboracao com equipas multidisciplinares.",
+    results: ["Arquitetura frontend mais escalavel", "Melhorias de usabilidade e performance", "Evolucao de produto SaaS usado por empresas globais"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "alelo-benefits-dashboard",
+    name: "Alelo Benefits Dashboard",
     category: "Full Stack",
-    description: "Plataforma editorial para publicação, pesquisa e distribuição de conteúdo técnico e media.",
-    technologies: ["Next.js", "Node.js", "MDX", "PostgreSQL", "Vercel"],
-    challenge: "Criar um sistema editorial rápido, pesquisável e preparado para crescimento orgânico.",
-    solution: "Arquitetura App Router, conteúdo estruturado, metadados dinâmicos e automações de sitemap/RSS.",
-    results: ["Publicação simples", "SEO técnico completo", "Base preparada para newsletter"],
+    description:
+      "Desenvolvimento de interfaces ricas e dashboards para monitorizacao de receitas, frequencia de consumo, vendas e metricas de negocio na Alelo Benefits.",
+    technologies: ["React.js", "Styled Components", "SASS", "Node.js", "Jest", "React Testing Library"],
+    challenge:
+      "Melhorar a visualizacao de dados e a gestao de indicadores criticos para clientes em ambiente financeiro/beneficios.",
+    solution:
+      "Entrega de novas funcionalidades, arquitetura frontend, boas praticas, testes automatizados, CI/CD e colaboracao com UX, produto e backend.",
+    results: ["Dashboards mais interativos", "Melhor tomada de decisao para clientes", "Mais manutencao, escalabilidade e qualidade tecnica"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "ativa-investimentos-onboarding",
+    name: "Ativa Investimentos Onboarding",
+    category: "Full Stack",
+    description:
+      "Criacao de uma experiencia de cadastro simples e sem friccao para clientes de uma corretora de investimentos.",
+    technologies: ["Vue.js", "Vuex", "JavaScript", "SASS", "Node.js", "Jest"],
+    challenge:
+      "Simplificar o onboarding financeiro desde o registo ate a ativacao da conta, mantendo performance e acessibilidade.",
+    solution:
+      "Melhoria de arquitetura frontend, desenvolvimento de novas funcionalidades, mentoria tecnica e integracao entre frontend e backend.",
+    results: ["Fluxo de cadastro mais intuitivo", "Melhor performance no onboarding", "Maior alinhamento entre UX e engenharia"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "oi-fibra-hotsite",
+    name: "Oi Fibra Hotsite",
+    category: "Frontend",
+    description:
+      "Desenvolvimento do hotsite Oi Fibra com React, Next.js e Atomic Design para uma grande plataforma de telecomunicacoes no Brasil.",
+    technologies: ["React", "Next.js", "Atomic Design", "JavaScript", "SASS"],
+    challenge:
+      "Criar uma base modular e reutilizavel com boa performance, SEO e manutencao para uma plataforma de alto alcance.",
+    solution:
+      "Arquitetura frontend modular, SSR com Next.js, documentacao de codigo e colaboracao agil com stakeholders.",
+    results: ["Melhor performance e SEO", "Arquitetura de componentes mais escalavel", "Experiencia digital mais robusta para telecomunicacoes"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "globoplay-smart-tv",
+    name: "Globoplay Smart TV",
+    category: "Frontend",
+    description:
+      "Desenvolvimento de funcionalidades para a aplicacao Smart TV do Globoplay, uma das principais plataformas de streaming on-demand do Brasil.",
+    technologies: ["React.js", "JavaScript", "Redux", "Storybook", "GraphQL", "Apollo Client"],
+    challenge:
+      "Melhorar a experiencia de visualizacao em diferentes modelos de Smart TV, garantindo compatibilidade e fluidez.",
+    solution:
+      "Desenvolvimento de novas funcionalidades, testes funcionais em dispositivos TV e integracao com GraphQL/Apollo Client.",
+    results: ["Experiencia de streaming mais fluida", "Maior compatibilidade entre dispositivos", "Interface otimizada para Smart TVs"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "petrobras-drilling-dashboard",
+    name: "Petrobras Drilling Dashboard",
+    category: "Full Stack",
+    description:
+      "Solucoes para planeamento de pocos, operacoes de perfuracao e gestao de producao da Petrobras atraves do GTEP/PUC-RJ.",
+    technologies: ["Angular", "TypeScript", "RxJS", "Recharts", "D3.js"],
+    challenge:
+      "Transformar uma aplicacao desktop em solucao web rica com dashboards em tempo real para operacoes criticas de engenharia.",
+    solution:
+      "Desenvolvimento de aplicacao web para monitorizacao, envio de relatorios, acompanhamento de bugs e visualizacao de dados operacionais.",
+    results: ["Dados operacionais em tempo real", "Melhor eficiencia em operacoes de perfuracao", "Comunicacao mais clara entre equipas de engenharia"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "oi-consumer-account-platform",
+    name: "Oi Consumer Account Platform",
+    category: "Frontend",
+    description:
+      "Desenvolvimento de aplicacao publica para consumidores Oi gerirem perfis, contas e configuracoes com uma interface clara e intuitiva.",
+    technologies: ["ReactJS", "Redux", "Storybook", "Angular", "Ionic", "Atomic Design"],
+    challenge:
+      "Criar uma experiencia cross-platform acessivel e reutilizavel para milhoes de utilizadores.",
+    solution:
+      "Desenvolvimento de componentes React, uso de Angular/Ionic, Storybook e padroes Atomic Design para escalar a UI.",
+    results: ["Gestao de conta mais simples", "Componentes reutilizaveis", "Experiencia acessivel e cross-platform"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "bradesco-seguros-web-platforms",
+    name: "Bradesco Seguros Web Platforms",
+    category: "Frontend",
+    description:
+      "Desenvolvimento e otimizacao de intranets e aplicacoes web customer-facing para Bradesco Seguros durante a experiencia na Ebix.",
+    technologies: ["Vanilla JavaScript", "HTML5", "CSS3"],
+    challenge:
+      "Melhorar performance, manutencao e consistencia visual de plataformas internas e externas no setor segurador.",
+    solution:
+      "Interfaces pixel-perfect, otimizacao de aplicacoes JavaScript, manutencao continua e aplicacao de standards web.",
+    results: ["Melhor performance web", "Experiencia visual consistente", "Maior acessibilidade e manutencao"],
+    demo: "#",
+    github: null
+  },
+  {
+    slug: "corporate-communication-digital-products",
+    name: "Corporate Communication Digital Products",
+    category: "Frontend",
+    description:
+      "Desenvolvimento de websites, newsletters, email marketing e motion graphics para clientes de comunicacao corporativa e publicidade.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Adobe Suite"],
+    challenge:
+      "Traduzir design, branding e objetivos de comunicacao em experiencias digitais funcionais e visualmente consistentes.",
+    solution:
+      "Implementacao de layouts responsivos, campanhas digitais, motion graphics e websites com foco em design, funcionalidade e experiencia.",
+    results: ["Experiencias digitais visualmente consistentes", "Maior impacto em comunicacao corporativa", "Base solida entre design e frontend"],
     demo: "#",
     github: null
   }
 ];
 
 export const skills = [
-  { category: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "Redux", "Zustand"], level: 96 },
-  { category: "Backend", items: ["Node.js", "Express", "NestJS"], level: 82 },
-  { category: "Styling", items: ["Tailwind", "CSS", "SCSS"], level: 92 },
-  { category: "Testing", items: ["Jest", "Vitest", "Cypress", "Playwright"], level: 86 },
-  { category: "DevOps", items: ["Docker", "GitHub Actions", "Vercel"], level: 78 },
-  { category: "Performance", items: ["Core Web Vitals", "SEO", "Accessibility"], level: 94 }
+  { category: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "Design Systems"], level: 98 },
+  { category: "Performance & SEO", items: ["Core Web Vitals", "Image Optimization", "Caching", "SEO"], level: 96 },
+  { category: "Accessibility", items: ["WCAG", "Keyboard Navigation", "Semantic HTML", "Screen Readers"], level: 95 },
+  { category: "Testing & Quality", items: ["Jest", "Vitest", "React Testing Library", "Playwright"], level: 90 },
+  { category: "Backend & APIs", items: ["Node.js", "REST", "GraphQL"], level: 82 },
+  { category: "DevOps", items: ["CI/CD", "Vercel", "Docker", "GitHub Actions"], level: 80 }
 ];
 
 export const testimonials = [

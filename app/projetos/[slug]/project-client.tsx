@@ -31,11 +31,11 @@ export function ProjectClient({ slug }: { slug: string }) {
               </Card>
             ))}
           </div>
-          <div className="mt-8 aspect-[16/9] rounded-lg border border-border bg-hero-grid bg-[size:32px_32px] p-8">
+          {/* <div className="mt-8 aspect-[16/9] rounded-lg border border-border bg-hero-grid bg-[size:32px_32px] p-8">
             <div className="flex h-full items-end rounded-lg border border-border bg-surface/80 p-6">
               <p className="max-w-md text-2xl font-semibold">{t.projects.screenshot}</p>
             </div>
-          </div>
+          </div> */}
         </article>
         <aside className="h-fit rounded-lg border border-border bg-surface p-5">
           <h2 className="font-semibold">{t.common.technologies}</h2>
@@ -44,7 +44,7 @@ export function ProjectClient({ slug }: { slug: string }) {
               <Badge key={tech}>{tech}</Badge>
             ))}
           </div>
-          <div className="mt-6 grid gap-3">
+          {/* <div className="mt-6 grid gap-3">
             <Button asChild variant="secondary">
               <Link href={project.demo}>
                 <ExternalLink className="h-4 w-4" />
@@ -59,7 +59,7 @@ export function ProjectClient({ slug }: { slug: string }) {
                 </Link>
               </Button>
             ) : null}
-          </div>
+          </div> */}
         </aside>
       </div>
     </Section>

@@ -1,5 +1,5 @@
 ---
-title: Accessibility in mature React teams
+title: Accessibility in React projects
 description: How to turn accessibility into an engineering habit instead of a late checkpoint.
 date: 2026-03-04
 category: Accessibility
@@ -7,8 +7,27 @@ tags: [Accessibility, React, Design Systems]
 published: true
 ---
 
-Accessibility improves when it stops depending on individual heroics. Base components should carry semantics, focus states, contrast and keyboard interactions from the beginning.
+## Introduction
 
-In React, this means testing real flows, using native HTML whenever possible and treating complex components with the same rigor as a public API.
+Accessibility becomes reliable when embedded in team practices rather than left to individual effort. Base components must include proper semantics, visible focus states, sufficient contrast and full keyboard support.
 
-The result is a more inclusive experience and also a more predictable foundation for every user.
+## Principles and practices
+
+- Favor native HTML elements where possible and design component APIs that enforce accessible defaults.
+- Document expected behaviors and the props that control focus, labeling and auxiliary states.
+
+## Testing and automation
+
+Automate checks with tools like axe in unit and E2E tests, and surface accessibility issues in Storybook for early visual review. Manual testing with screen readers and keyboard navigation complements automated checks.
+
+## Governance and culture
+
+Make a11y part of your definition of done: PRs should not introduce accessibility regressions. Run periodic audits and track key metrics (for example, critical violations) as quality indicators.
+
+## Training and adoption
+
+Invest in hands-on training: pair programming, concise guidelines and real examples accelerate adoption. Consistent accessibility reduces legal risk, broadens your audience and improves UX for everyone.
+
+## Conclusion
+
+Consistent accessibility creates a more inclusive, predictable and maintainable foundation for all users.

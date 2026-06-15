@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CommandMenu } from "@/components/command-menu";
+// import { CommandMenu } from "@/components/command-menu";
 import { LanguageToggle } from "@/components/language-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -36,7 +36,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <CommandMenu />
+          {/* <CommandMenu /> */}
           <LanguageToggle />
           <ThemeToggle />
           <Button asChild size="sm">

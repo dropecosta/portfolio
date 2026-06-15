@@ -1,6 +1,7 @@
 import { articleReadingTime } from "@/lib/articles";
 import {
   companies,
+  projects as baseProjects,
   projectCategories,
   serviceHighlights,
   siteConfig,
@@ -18,7 +19,14 @@ const pt = {
   stack,
   serviceHighlights,
   projectCategories,
-  skills,
+  skills: [
+    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "Design Systems"], level: 98 },
+    { category: "Performance & SEO", items: ["Core Web Vitals", "Otimização de Imagens", "Caching", "SEO"], level: 96 },
+    { category: "Acessibilidade", items: ["WCAG", "Navegação por Teclado", "HTML Semântico", "Leitores de Tela"], level: 95 },
+    { category: "Testes & Qualidade", items: ["Jest", "Vitest", "React Testing Library", "Playwright"], level: 90 },
+    { category: "Backend & APIs", items: ["Node.js", "REST", "GraphQL"], level: 82 },
+    { category: "DevOps", items: ["CI/CD", "Vercel", "Docker", "GitHub Actions"], level: 80 }
+  ],
   values: ["Qualidade", "Simplicidade", "Escalabilidade", "Performance", "Experiência do utilizador"],
   timeline: [
     ["2013", "Início em engenharia web", "Primeiros produtos digitais com foco em JavaScript, interfaces ricas e entrega próxima das equipas de negócio."],
@@ -41,48 +49,289 @@ const pt = {
   ].map(([quote, author, role]) => ({ quote, author, role })),
   experiences: [
     {
+      company: "GBL Tech",
+      role: "Senior Frontend Developer",
+      period: "Out 2025 - Presente",
+      tech: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Accessibility"],
+      responsibilities: [
+        "Desenvolvimento e evolução de soluções frontend para Vodafone",
+        "Entrega de novas funcionalidades e otimização de jornadas digitais",
+        "Estruturação da arquitetura frontend em ambiente enterprise",
+        "Colaboração com produto, design e backend",
+        "Foco em performance, responsividade e acessibilidade",
+        "Aprimoramento de qualidade e manutenção de código"
+      ],
+      results: [
+        "Interfaces de cliente escaláveis e confiáveis",
+        "Melhoria da experiência do utilizador",
+        "Arquitetura mais sustentável",
+        "Entrega consistente em produto telecom"
+      ]
+    },
+    {
+      company: "Inetum",
+      role: "Senior Frontend Developer",
+      period: "Jan 2024 - Abr 2025",
+      tech: ["React", "PWA", "TypeScript", "JavaScript", "Accessibility", "Real-time APIs"],
+      responsibilities: [
+        "Desenvolvimento da nova aplicação PWA da Comboios de Portugal",
+        "Implementação de funcionalidades React interativas",
+        "Integração de APIs em tempo real",
+        "Otimização mobile-first e suporte offline",
+        "Garantia de acessibilidade e experiência do utilizador"
+      ],
+      results: [
+        "Aplicação mais rápida e confiável",
+        "Acesso offline via PWA",
+        "Informação de horários e bilhetes sempre atualizada",
+        "Experiência móvel mais fluida"
+      ]
+    },
+    {
+      company: "IGNIT",
+      role: "Senior Frontend Developer",
+      period: "Set 2023 - Jan 2024",
+      tech: ["Next.js", "TypeScript", "React", "Storybook", "Tailwind", "BEM"],
+      responsibilities: [
+        "Desenvolvimento de interfaces para a AMA",
+        "Uso de Next.js e TypeScript para soluções escaláveis",
+        "Criação de componentes responsivos e manuteníveis",
+        "Trabalho em metodologia ágil com Jira",
+        "Testes unitários e garantia de qualidade",
+        "Foco em performance e acessibilidade"
+      ],
+      results: [
+        "Serviços públicos mais acessíveis",
+        "Componentes frontend mais consistentes",
+        "Entrega de alta qualidade em prazos curtos"
+      ]
+    },
+    {
+      company: "Capgemini Engineering",
+      role: "Senior Software Engineering Consultant",
+      period: "Jun 2022 - Jun 2023",
+      tech: ["React", "TypeScript", "Redux Toolkit", "Jest", "React Testing Library", "ES6+"],
+      responsibilities: [
+        "Desenvolvimento de novas funcionalidades para Contentful",
+        "Definição de arquitetura frontend e padrões técnicos",
+        "Colaboração com UX, produto e equipes multidisciplinares",
+        "Otimização de performance e usabilidade",
+        "Liderança técnica em discussões de solução"
+      ],
+      results: [
+        "Arquitetura de frontend mais escalável",
+        "Plataforma mais estável e fácil de evoluir",
+        "Melhorias diretas na experiência do usuário"
+      ]
+    },
+    {
       company: "CI&T",
-      role: "Senior Frontend Engineer",
-      period: "2024 - Presente",
-      tech: ["React", "Next.js", "TypeScript", "Design Systems", "Testing"],
-      responsibilities: ["Arquitetura frontend", "Mentoria técnica", "Acessibilidade e performance", "Colaboração com equipas globais"],
-      results: ["Melhoria de consistência UI", "Redução de dívida técnica", "Entrega previsível em ambientes enterprise"]
+      role: "Frontend Developer",
+      period: "Out 2020 - Abr 2022",
+      tech: ["React", "Styled Components", "SASS", "Node.js", "Jest", "React Testing Library"],
+      responsibilities: [
+        "Desenvolvimento de dashboards e interfaces ricas",
+        "Definição de arquitetura frontend e boas práticas",
+        "Implementação de testes automatizados e CI/CD",
+        "Colaboração com UX/UI, produto e backend",
+        "Foco em performance, acessibilidade e manutenibilidade"
+      ],
+      results: [
+        "Dashboards mais interativos e escaláveis",
+        "Melhor tomada de decisão para clientes",
+        "Maior qualidade técnica e estabilidade"
+      ]
     },
     {
-      company: "Capgemini",
-      role: "Frontend / Full Stack Developer",
-      period: "2021 - 2024",
-      tech: ["React", "Node.js", "TypeScript", "Azure", "CI/CD"],
-      responsibilities: ["Desenvolvimento de produto", "Integrações API", "Code review", "Qualidade e testes"],
-      results: ["Modernização de aplicações", "Melhorias em performance", "Aumento de cobertura funcional"]
+      company: "Ativa Investimentos",
+      role: "Senior Frontend Developer",
+      period: "Fev 2020 - Jun 2020",
+      tech: ["Vue.js", "Vuex", "JavaScript", "SASS", "Node.js", "Jest"],
+      responsibilities: [
+        "Criação de onboarding financeiro simples e sem atrito",
+        "Melhoria da arquitetura frontend e do fluxo de cadastro",
+        "Colaboração entre UX e engenharia",
+        "Mentoria técnica e suporte ao time",
+        "Otimização de performance e acessibilidade"
+      ],
+      results: [
+        "Onboarding mais intuitivo",
+        "Experiência de cadastro mais rápida",
+        "Integração mais fluida entre frontend e backend"
+      ]
     },
     {
-      company: "Rádio Popular",
-      role: "Frontend Engineer",
-      period: "2019 - 2021",
-      tech: ["JavaScript", "React", "E-commerce", "SEO", "Analytics"],
-      responsibilities: ["Experiência de compra", "Otimização SEO", "Componentes reutilizáveis", "Observabilidade"],
-      results: ["Fluxos mais rápidos", "Melhor indexação", "Base UI mais consistente"]
+      company: "Accenture",
+      role: "IT Consultant",
+      period: "Set 2019 - Dez 2019",
+      tech: ["React", "Next.js", "Atomic Design", "JavaScript", "SASS"],
+      responsibilities: [
+        "Desenvolvimento do hotsite Oi Fibra",
+        "Arquitetura de componentes reutilizáveis",
+        "Uso de Next.js para SSR e SEO",
+        "Colaboração ágil com stakeholders",
+        "Documentação de código e boas práticas"
+      ],
+      results: [
+        "Melhor performance e SEO",
+        "Interface escalável e modular",
+        "Experiência digital mais robusta"
+      ]
     },
     {
-      company: "AMA / Comboios de Portugal",
-      role: "Software Developer",
-      period: "2016 - 2019",
-      tech: ["JavaScript", "HTML", "CSS", "Accessibility", "APIs"],
-      responsibilities: ["Interfaces públicas", "Acessibilidade", "Integração de serviços", "Suporte evolutivo"],
-      results: ["Serviços digitais robustos", "Experiência mobile melhorada", "Maior fiabilidade em produção"]
+      company: "Altran",
+      role: "Senior Application Developer",
+      period: "Mai 2019 - Ago 2019",
+      tech: ["React", "JavaScript", "Redux", "Storybook", "GraphQL", "Apollo Client"],
+      responsibilities: [
+        "Desenvolvimento da aplicação Globoplay Smart TV",
+        "Otimização da interface para múltiplos modelos de TV",
+        "Testes funcionais em dispositivos reais",
+        "Colaboração com equipes cross-funcionais"
+      ],
+      results: [
+        "Experiência de streaming mais fluida",
+        "Maior compatibilidade entre TVs",
+        "Interface otimizada para Smart TVs"
+      ]
+    },
+    {
+      company: "PUC-RJ / GTEP",
+      role: "Senior Frontend Developer",
+      period: "Set 2018 - Mai 2019",
+      tech: ["Angular", "TypeScript", "RxJS", "Recharts", "D3.js"],
+      responsibilities: [
+        "Desenvolvimento de dashboard para operações de perfuração",
+        "Transformação de aplicação desktop em solução web",
+        "Integração de visualizações de dados em tempo real",
+        "Colaboração com engenheiros de petróleo e software"
+      ],
+      results: [
+        "Dados operacionais em tempo real",
+        "Melhor eficiência em perfuração",
+        "Comunicação mais clara entre equipes"
+      ]
+    },
+    {
+      company: "Oi S.A.",
+      role: "Frontend Developer",
+      period: "Jul 2017 - Ago 2018",
+      tech: ["React", "Redux", "Storybook", "Angular", "Ionic", "Atomic Design"],
+      responsibilities: [
+        "Desenvolvimento de aplicação de conta para consumidores",
+        "Criação de componentes escaláveis e reutilizáveis",
+        "Garantia de interface acessível e cross-platform",
+        "Alinhamento entre metas técnicas e de negócio"
+      ],
+      results: [
+        "Gestão de contas mais simples",
+        "Experiência acessível e intuitiva",
+        "Componentes frontend mais consistentes"
+      ]
+    },
+    {
+      company: "Ebix",
+      role: "Frontend Developer",
+      period: "Jun 2014 - Fev 2017",
+      tech: ["Vanilla JavaScript", "HTML5", "CSS3"],
+      responsibilities: [
+        "Desenvolvimento e otimização de intranets e apps web para Bradesco Seguros",
+        "Uso de padrões web para performance e acessibilidade",
+        "Análise contínua e manutenção de aplicações"
+      ],
+      results: [
+        "Melhor performance web",
+        "Experiência visual mais consistente",
+        "Maior acessibilidade e manutenção"
+      ]
+    },
+    {
+      company: "Nós da Comunicação",
+      role: "UI/UX Designer | Frontend Developer",
+      period: "Fev 2011 - Fev 2014",
+      tech: ["HTML5", "CSS3", "JavaScript", "Adobe Suite"],
+      responsibilities: [
+        "Criação de sites, newsletters e motion graphics",
+        "Implementação digital com foco em design e experiência",
+        "Desenvolvimento de campanhas e ativos de comunicação"
+      ],
+      results: [
+        "Experiências digitais consistentes",
+        "Comunicação visual mais impactante",
+        "Soluções digitais alinhadas à marca"
+      ]
+    },
+    {
+      company: "Barata Publicidade",
+      role: "Designer Web",
+      period: "Jul 2009 - Fev 2011",
+      tech: ["HTML", "CSS", "JavaScript"],
+      responsibilities: [
+        "Criação de layouts responsivos e pixel-perfect",
+        "Tradução de mockups em websites",
+        "Prototipagem de interfaces"
+      ],
+      results: [
+        "Websites funcionais e visualmente fiéis",
+        "Implementação precisa de design",
+        "Experiência digital consistente"
+      ]
+    },
+    {
+      company: "Outras Letras",
+      role: "Designer Web",
+      period: "Jan 2007 - Jun 2009",
+      tech: ["HTML", "CSS", "JavaScript"],
+      responsibilities: [
+        "Design editorial e desenvolvimento web",
+        "Criação de identidade visual coesa",
+        "Produção de peças para mídias impressas e digitais"
+      ],
+      results: [
+        "Identidade visual consistente",
+        "Produção de materiais atraentes",
+        "Web e editorial integrados"
+      ]
     }
   ],
   projects: [
     {
+      slug: "inetum-digital-platforms",
+      name: "Inetum Digital Platforms",
+      category: "Frontend",
+      description:
+        "Entrega frontend senior na Inetum para produtos digitais em transportes, e-commerce e servicos publicos, incluindo Comboios de Portugal, Radio Popular e Portal Unico - E-Portugal.",
+      technologies: ["React", "PWA", "Next.js", "TypeScript", "ES6+", "JavaScript", "PHP", "Accessibility", "Jira"],
+      challenge:
+        "Contribuir para plataformas de setores distintos com requisitos exigentes de performance, acessibilidade, fiabilidade, mobile-first e experiencia de utilizador consistente.",
+      solution:
+        "Desenvolvimento de interfaces React e Next.js, implementacao PWA, integracao de APIs em tempo real, otimizacao mobile-first, melhorias de performance, componentes reutilizaveis e testes unitarios.",
+      results: [
+        "Aplicacao PWA mais rapida e fiavel para a Comboios de Portugal",
+        "Experiencia de compra mais fluida na plataforma e-commerce da Radio Popular",
+        "Portal Unico - E-Portugal mais acessivel, performante e estavel",
+        "Melhor consistencia frontend em produtos digitais de alto impacto"
+      ],
+      demo: "#",
+      github: null
+    },
+    {
       slug: "citizen-services-platform",
-      name: "Citizen Services Platform",
+      name: "Portal Unico - E-Portugal",
       category: "Government",
-      description: "Modernização de serviços públicos digitais com foco em acessibilidade, performance e clareza de fluxos.",
-      technologies: ["React", "TypeScript", "Accessibility", "Design Systems"],
-      challenge: "Unificar experiências complexas para públicos diversos sem comprometer conformidade e usabilidade.",
-      solution: "Arquitetura de componentes acessíveis, padrões de formulário reutilizáveis e revisão de performance por fluxo.",
-      results: ["AA-ready UI", "Menos fricção em formulários", "Base escalável para novas jornadas"],
+      description:
+        "Contribuicao para a nova versao do Portal Unico - E-Portugal, uma plataforma publica essencial para modernizar e simplificar o acesso a servicos digitais em Portugal.",
+      technologies: ["Next.js", "React", "TypeScript", "ES6+", "Accessibility", "Jira"],
+      challenge:
+        "Evoluir uma plataforma governamental de grande visibilidade, garantindo acessibilidade, performance, qualidade tecnica e uma experiencia clara para cidadaos em diferentes contextos de utilizacao.",
+      solution:
+        "Desenvolvimento de interfaces frontend com Next.js, TypeScript e ES6+, aplicacao de praticas ageis com Jira, otimizacao de performance e acessibilidade, e criacao de testes unitarios para aumentar estabilidade e confianca na entrega.",
+      results: [
+        "Servicos publicos digitais mais acessiveis",
+        "Melhor performance e experiencia de utilizador",
+        "Maior estabilidade atraves de testes unitarios",
+        "Base frontend mais moderna e manutenivel"
+      ],
       demo: "#",
       github: null
     },
@@ -132,9 +381,13 @@ const pt = {
       category: "Arquitetura",
       tags: ["React", "Next.js", "TypeScript", "DX"],
       body: [
-        "Arquitetura frontend escalável começa com clareza de fronteiras. Componentes devem representar intenção de produto, enquanto detalhes técnicos ficam próximos do domínio que servem.",
-        "Uma boa base combina design tokens, contratos de dados previsíveis, testes nos fluxos críticos e uma estratégia de rendering que respeita a experiência do utilizador.",
-        "O objetivo não é criar abstrações perfeitas. É tornar a mudança mais barata, a revisão mais objetiva e o onboarding mais rápido."
+        "Arquitetura frontend escalável começa por definir fronteiras claras entre domínio de produto e infra-estrutura técnica. Componentes devem expressar intenção de produto — o que o utilizador espera — enquanto a complexidade técnica fica encapsulada e próxima do domínio que a necessita.",
+        "Princípios essenciais incluem design tokens para consistência visual, contratos de dados previsíveis entre camadas e convenções de componentes que favoreçam reutilização sem acoplamento excessivo. Isto reduz custo de mudança e facilita reviews.",
+        "Decisões de rendering (SSR, SSG, ISR, client-side) devem ser orientadas por custo do utilizador e criticidade da página: escolha híbrida quando necessário e documente as razões para cada padrão.",
+        "Cobertura de testes deve focar fluxos críticos: unitários para lógica, component tests para API pública dos componentes e E2E para jornadas de alto impacto. Integre testes de performance e acessibilidade no pipeline de CI.",
+        "Uma boa DX acelera a equipa: Storybook bem organizado, templates de projeto, linting consistente e documentação de convenções tornam onboarding e manutenção previsíveis.",
+        "Monitore a arquitetura em produção: erros, regressões de desempenho e tempo de build. Defina budgets de performance e um processo para tratar regressões rapidamente.",
+        "Na prática, vise simplicidade nas abstrações. Prefira soluções iterativas que diminuam o custo de mudança, tornando o sistema mais resiliente e fácil de evoluir." 
       ].join("\n\n")
     },
     {
@@ -145,22 +398,27 @@ const pt = {
       category: "Performance",
       tags: ["Performance", "SEO", "Analytics"],
       body: [
-        "Core Web Vitals ajudam equipas a falar sobre experiência com dados concretos. LCP, INP e CLS mostram onde a interface falha antes mesmo de o utilizador conseguir explicar o problema.",
-        "O trabalho mais eficaz começa por páginas de maior impacto, define budgets e mede regressões no pipeline. Performance passa a ser uma propriedade do sistema.",
-        "Quando a equipa olha para velocidade como qualidade de produto, as decisões de arquitetura ficam mais maduras."
+        "Core Web Vitals transformam métricas técnicas em sinais acionáveis para produto: LCP indica a rapidez com que o conteúdo principal aparece, INP mensura a responsividade nas interações e CLS mede estabilidade visual.",
+        "Meça em laboratório (synthetic) e em campo (RUM). Tests sintéticos ajudam a diagnosticar regressões controladas; RUM mostra o impacto real nos utilizadores e nas diferentes condições de rede.",
+        "Defina prioridades por impacto: identifique páginas que geram tráfego e receita, crie budgets de performance e adicione checagens automáticas no pipeline para impedir regressões.",
+        "Intervenções comuns e eficazes incluem otimização de imagens (formatos modernos, responsive images), pré-carregamento crítico, redução de JS no caminho crítico, e políticas de cache agressivas para ativos estáticos.",
+        "Integre Core Web Vitals com dashboards de produto e aloque propriedade clara entre frontend, infra e produto. Métricas isoladas não bastam — acompanhe conversão e retenção para justificar trade-offs técnicos.",
+        "Ao tornar performance uma propriedade do produto, equipas conseguem decidir entre velocidade, funcionalidade e custo, e implementar melhorias sustentáveis no longo prazo." 
       ].join("\n\n")
     },
     {
-      slug: "acessibilidade-em-equipas-react",
-      title: "Acessibilidade em equipas React maduras",
+      slug: "acessibilidade-em-projetos-React",
+      title: "Acessibilidade em projetos React",
       description: "Como transformar acessibilidade num hábito de engenharia e não num checkpoint tardio.",
       date: "2026-03-04",
       category: "Accessibility",
       tags: ["Accessibility", "React", "Design Systems"],
       body: [
-        "Acessibilidade melhora quando deixa de depender de heroísmo individual. Componentes base devem carregar semântica, estados de foco, contraste e interações por teclado desde o início.",
-        "Em React, isto significa testar fluxos reais, usar HTML nativo sempre que possível e tratar componentes complexos com o mesmo rigor de uma API pública.",
-        "O resultado é uma experiência mais inclusiva, mas também uma base mais previsível para todos os utilizadores."
+        "Acessibilidade deixa de ser um checklist quando se transforma em prática de equipa. Componentes base devem incluir semântica adequada, estados de foco visíveis, contraste suficiente e suporte completo à navegação por teclado.",
+        "No ecossistema React, priorize HTML nativo sempre que possível e exponha uma API de componentes que force padrões acessíveis. Documente comportamentos esperados e propriedades que controlam foco, labels e estados auxiliares.",
+        "Automatize verificações com ferramentas como axe em testes unitários e E2E, e integre verificações em Storybook para revisão visual. Testes manuais com leitores de ecrã e navegação por teclado complementam os testes automáticos.",
+        "Inclua acessibilidade na definição de pronto: PRs sem regressões a11y não devem ser aceites. Realize auditorias periódicas e acompanhe métricas (por exemplo, número de violações críticas) como KPI de qualidade.",
+        "Por fim, invista em formação prática: pair programming, guidelines concisas e exemplos reais aceleram a adoção. Acessibilidade consistente reduz risco legal, amplia audiência e melhora UX para todos." 
       ].join("\n\n")
     }
   ]
@@ -168,6 +426,14 @@ const pt = {
 
 const en: typeof pt = {
   ...pt,
+  skills: [
+    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "Design Systems"], level: 98 },
+    { category: "Performance & SEO", items: ["Core Web Vitals", "Image Optimization", "Caching", "SEO"], level: 96 },
+    { category: "Accessibility", items: ["WCAG", "Keyboard Navigation", "Semantic HTML", "Screen Readers"], level: 95 },
+    { category: "Testing & Quality", items: ["Jest", "Vitest", "React Testing Library", "Playwright"], level: 90 },
+    { category: "Backend & APIs", items: ["Node.js", "REST", "GraphQL"], level: 82 },
+    { category: "DevOps", items: ["CI/CD", "Vercel", "Docker", "GitHub Actions"], level: 80 }
+  ],
   values: ["Quality", "Simplicity", "Scalability", "Performance", "User experience"],
   timeline: [
     ["2013", "Started in web engineering", "Early digital products focused on JavaScript, rich interfaces and close collaboration with business teams."],
@@ -210,11 +476,31 @@ const en: typeof pt = {
   })),
   projects: pt.projects.map((project) => {
     const map = {
+      "inetum-digital-platforms": {
+        name: "Inetum Digital Platforms",
+        description:
+          "Senior frontend delivery at Inetum for digital products across transport, e-commerce and public services, including Comboios de Portugal, Radio Popular and Portal Unico - E-Portugal.",
+        challenge:
+          "Contribute to platforms across different sectors with demanding requirements for performance, accessibility, reliability, mobile-first delivery and consistent user experience.",
+        solution:
+          "Developed React and Next.js interfaces, implemented PWA capabilities, integrated real-time APIs, optimized mobile-first experiences, improved performance, built reusable components and added unit testing.",
+        results: [
+          "Faster and more reliable PWA for Comboios de Portugal",
+          "Smoother shopping experience on Radio Popular's e-commerce platform",
+          "More accessible, performant and stable Portal Unico - E-Portugal",
+          "Better frontend consistency across high-impact digital products"
+        ]
+      },
       "citizen-services-platform": {
-        description: "Modernization of digital public services focused on accessibility, performance and clearer flows.",
-        challenge: "Unify complex experiences for broad audiences without compromising compliance or usability.",
-        solution: "Accessible component architecture, reusable form patterns and performance reviews per journey.",
-        results: ["AA-ready UI", "Less form friction", "Scalable foundation for new journeys"]
+        description: "Contribution to the new version of Portal Unico - E-Portugal, a key public platform designed to modernize and simplify access to digital services in Portugal.",
+        challenge: "Evolve a high-visibility government platform while ensuring accessibility, performance, technical quality, and a clear user experience for citizens across different usage contexts.",
+        solution: "Developed frontend interfaces with Next.js, TypeScript and ES6+, applied agile practices with Jira, improved performance and accessibility, and added unit testing to increase stability and delivery confidence.",
+        results: [
+          "More accessible public digital services",
+          "Improved performance and user experience",
+          "Greater stability through unit testing",
+          "More modern and maintainable frontend foundation"
+        ],
       },
       "commerce-performance-system": {
         description: "Experience and performance system for an online store with strong SEO and conversion needs.",
@@ -246,9 +532,13 @@ const en: typeof pt = {
       category: "Architecture",
       tags: ["React", "Next.js", "TypeScript", "DX"],
       body: [
-        "Scalable frontend architecture starts with clear boundaries. Components should express product intent, while technical details stay close to the domain they serve.",
-        "A strong foundation combines design tokens, predictable data contracts, tests around critical flows and a rendering strategy that respects the user experience.",
-        "The goal is not to create perfect abstractions. It is to make change cheaper, review more objective and onboarding faster."
+          "Scalable frontend architecture begins by defining clear boundaries between product intent and technical infrastructure. Components should communicate what the product does for users, while technical complexity remains encapsulated where it is needed.",
+          "Core practices include design tokens for consistent visual language, predictable data contracts between layers, and component conventions that enable reuse without tight coupling — all of which reduce the cost of change.",
+          "Rendering strategies (SSR, SSG, ISR, client-side) should be chosen based on user cost and page criticality; prefer hybrid approaches when appropriate and document the rationale for each pattern.",
+          "Testing should protect critical user flows: unit tests for logic, component tests for public APIs, and E2E for high-impact journeys. Include performance and accessibility checks in CI to prevent regressions.",
+          "Developer experience matters: a well-structured Storybook, project templates, consistent linting and clear conventions make onboarding and maintenance predictable and fast.",
+          "Monitor architecture in production — errors, performance regressions and build time — and set performance budgets with a defined remediation process.",
+          "Aim for pragmatic simplicity in abstractions. Iterative solutions that lower the cost of change produce more resilient, evolvable systems." 
       ].join("\n\n")
     },
     {
@@ -259,22 +549,27 @@ const en: typeof pt = {
       category: "Performance",
       tags: ["Performance", "SEO", "Analytics"],
       body: [
-        "Core Web Vitals help teams talk about experience with concrete data. LCP, INP and CLS reveal where an interface fails before the user can explain the problem.",
-        "The most effective work starts with high-impact pages, defines budgets and measures regressions in the pipeline. Performance becomes a property of the system.",
-        "When a team treats speed as product quality, architecture decisions become more mature."
+          "Core Web Vitals turn technical measurements into actionable product signals: LCP measures how quickly main content appears, INP captures interaction latency, and CLS reflects visual stability.",
+          "Measure both in the lab (synthetic) and in the field (RUM). Synthetic tests are useful for debugging regressions under controlled conditions; RUM reveals the real-world impact across devices and networks.",
+          "Prioritize work by impact: identify pages that drive traffic and revenue, create performance budgets and add automated checks to your CI to block regressions.",
+          "Common interventions include image optimization (modern formats, responsive sizes), critical resource prioritization, reducing JS on the critical path, and strong caching strategies for static assets.",
+          "Integrate Core Web Vitals into product dashboards and assign clear ownership between frontend, infra and product teams. Metrics alone are not enough — correlate them with conversion and retention to justify trade-offs.",
+          "Making performance a product-level concern enables teams to balance speed, features and cost, and to deliver sustainable improvements over time." 
       ].join("\n\n")
     },
     {
-      slug: "acessibilidade-em-equipas-react",
-      title: "Accessibility in mature React teams",
+      slug: "acessibilidade-em-projetos-React",
+      title: "Accessibility in React projects",
       description: "How to turn accessibility into an engineering habit instead of a late checkpoint.",
       date: "2026-03-04",
       category: "Accessibility",
       tags: ["Accessibility", "React", "Design Systems"],
       body: [
-        "Accessibility improves when it stops depending on individual heroics. Base components should carry semantics, focus states, contrast and keyboard interactions from the beginning.",
-        "In React, this means testing real flows, using native HTML whenever possible and treating complex components with the same rigor as a public API.",
-        "The result is a more inclusive experience and also a more predictable foundation for every user."
+          "Accessibility becomes reliable when embedded in team practices rather than left to individual effort. Base components must include proper semantics, visible focus states, sufficient contrast and full keyboard support.",
+          "In React, favor native HTML elements where possible and design component APIs that enforce accessible defaults. Document expected behaviors and the props that control focus, labeling and auxiliary states.",
+          "Automate checks with tools like axe in unit and E2E tests, and surface accessibility issues in Storybook for early visual review. Manual testing with screen readers and keyboard navigation complements automated checks.",
+          "Make a11y part of your definition of done: PRs should not introduce accessibility regressions. Run periodic audits and track key metrics (for example, critical violations) as quality indicators.",
+          "Invest in hands-on training: pair programming, concise guidelines and real examples accelerate adoption. Consistent accessibility reduces legal risk, broadens your audience and improves UX for everyone." 
       ].join("\n\n")
     }
   ]
@@ -282,8 +577,167 @@ const en: typeof pt = {
 
 export type LocalizedData = typeof pt;
 
+const projectTranslations: Record<
+  string,
+  Partial<{
+    name: string;
+    description: string;
+    challenge: string;
+    solution: string;
+    results: string[];
+  }>
+> = {
+  "vodafone-digital-products": {
+    description:
+      "Development and continuous evolution of frontend solutions for Vodafone digital products, collaborating with the Celfocus team at GBL Tech.",
+    challenge:
+      "Evolve customer-facing interfaces in an enterprise environment while ensuring scalability, maintainability, performance and a consistent user experience.",
+    solution:
+      "Delivered new features, optimized digital journeys, structured frontend architecture and created reusable components.",
+    results: ["Smoother digital journeys", "Reusable and scalable UI patterns", "Performance, responsiveness and accessibility improvements"]
+  },
+  "comboios-de-portugal-pwa": {
+    name: "Comboios de Portugal PWA",
+    description:
+      "Development of the new Comboios de Portugal application, a React Progressive Web App designed to improve digital mobility services.",
+    challenge:
+      "Create a fast, efficient and reliable experience for schedules, ticketing and mobile-first usage.",
+    solution:
+      "Implemented PWA capabilities, React development, real-time API integration, offline access and fast loading optimizations.",
+    results: ["Faster mobile experience", "Offline access through PWA", "More up-to-date schedule and ticketing information", "Stronger focus on accessibility"]
+  },
+  "radio-popular-ecommerce": {
+    name: "Radio Popular E-commerce",
+    description:
+      "Development and optimization of Radio Popular's e-commerce platform, one of Portugal's leading electronics and home appliance retailers.",
+    challenge:
+      "Improve an e-commerce platform with focus on responsiveness, search, smart filters and shopping experience.",
+    solution:
+      "Implemented dynamic features, advanced search, smart filters, performance optimizations and close collaboration with UI/UX.",
+    results: ["Smoother shopping experience", "More efficient search and filters", "Better loading times", "More intuitive and accessible interface"]
+  },
+  "citizen-services-platform": {
+    name: "Portal Unico - E-Portugal",
+    description:
+      "Contribution to the new version of Portal Unico - E-Portugal, a key public platform designed to modernize and simplify access to digital services in Portugal.",
+    challenge:
+      "Evolve a high-visibility government platform while ensuring accessibility, performance, technical quality and a clear citizen experience.",
+    solution:
+      "Developed frontend interfaces with Next.js, TypeScript and ES6+, applied agile practices with Jira, improved performance and accessibility, and added unit testing.",
+    results: ["More accessible public digital services", "Improved performance and user experience", "Greater stability through unit testing"]
+  },
+  "ama-public-services-ignit": {
+    name: "AMA Public Digital Services",
+    description:
+      "Collaboration with AMA through IGNIT on public digital services, focused on React, Next.js, accessibility, performance and user experience.",
+    challenge:
+      "Build modern and inclusive public interfaces while preserving quality, visual consistency and capacity to evolve.",
+    solution:
+      "Created responsive and maintainable components, used Storybook, agile practices, performance optimization and unit testing.",
+    results: ["More accessible public interfaces", "More consistent frontend components", "Higher delivery quality and reliability"]
+  },
+  "contentful-saas-platform": {
+    name: "Contentful SaaS Platform",
+    description:
+      "Feature development and frontend architecture work for Contentful's global SaaS platform during the collaboration with Capgemini Engineering.",
+    challenge:
+      "Evolve a global headless CMS platform with strong scalability, usability and UX alignment requirements.",
+    solution:
+      "Implemented new features, defined technical standards, optimized performance and collaborated with multidisciplinary teams.",
+    results: ["More scalable frontend architecture", "Usability and performance improvements", "Evolution of a SaaS product used by global enterprises"]
+  },
+  "alelo-benefits-dashboard": {
+    name: "Alelo Benefits Dashboard",
+    description:
+      "Development of rich interfaces and dashboards to monitor revenue, consumption frequency, sales and business metrics at Alelo Benefits.",
+    challenge:
+      "Improve data visualization and management of critical indicators for benefits and financial clients.",
+    solution:
+      "Delivered new features, frontend architecture, best practices, automated tests, CI/CD and collaboration with UX, product and backend.",
+    results: ["More interactive dashboards", "Better decision-making for clients", "Greater maintainability, scalability and technical quality"]
+  },
+  "ativa-investimentos-onboarding": {
+    name: "Ativa Investimentos Onboarding",
+    description:
+      "Creation of a simple, frictionless registration experience for customers of an investment brokerage.",
+    challenge:
+      "Simplify financial onboarding from registration to account activation while preserving performance and accessibility.",
+    solution:
+      "Improved frontend architecture, developed new features, provided technical mentoring and integrated frontend and backend services.",
+    results: ["More intuitive registration flow", "Better onboarding performance", "Stronger alignment between UX and engineering"]
+  },
+  "oi-fibra-hotsite": {
+    name: "Oi Fibra Hotsite",
+    description:
+      "Development of the Oi Fibra hotsite with React, Next.js and Atomic Design for a large telecommunications platform in Brazil.",
+    challenge:
+      "Create a modular and reusable foundation with strong performance, SEO and maintainability for a high-reach platform.",
+    solution:
+      "Built modular frontend architecture, SSR with Next.js, code documentation and agile collaboration with stakeholders.",
+    results: ["Better performance and SEO", "More scalable component architecture", "More robust digital experience for telecommunications"]
+  },
+  "globoplay-smart-tv": {
+    name: "Globoplay Smart TV",
+    description:
+      "Feature development for Globoplay's Smart TV application, one of Brazil's leading on-demand streaming platforms.",
+    challenge:
+      "Improve the viewing experience across different Smart TV models while ensuring compatibility and fluidity.",
+    solution:
+      "Developed new features, ran functional tests on TV devices and integrated GraphQL/Apollo Client.",
+    results: ["Smoother streaming experience", "Greater device compatibility", "Interface optimized for Smart TVs"]
+  },
+  "petrobras-drilling-dashboard": {
+    name: "Petrobras Drilling Dashboard",
+    description:
+      "Solutions for well planning, drilling operations and production management for Petrobras through GTEP/PUC-RJ.",
+    challenge:
+      "Transform a desktop application into a rich web solution with real-time dashboards for critical engineering operations.",
+    solution:
+      "Developed a web application for monitoring, reports, bug tracking and operational data visualization.",
+    results: ["Real-time operational data", "Greater efficiency in drilling operations", "Clearer communication between engineering teams"]
+  },
+  "oi-consumer-account-platform": {
+    name: "Oi Consumer Account Platform",
+    description:
+      "Development of a public consumer application for Oi users to manage profiles, accounts and settings through a clear interface.",
+    challenge:
+      "Create an accessible, reusable cross-platform experience for millions of users.",
+    solution:
+      "Developed React components, worked with Angular/Ionic, Storybook and Atomic Design patterns to scale the UI.",
+    results: ["Simpler account management", "Reusable components", "Accessible and cross-platform experience"]
+  },
+  "bradesco-seguros-web-platforms": {
+    name: "Bradesco Seguros Web Platforms",
+    description:
+      "Development and optimization of intranets and customer-facing web applications for Bradesco Seguros during the Ebix experience.",
+    challenge:
+      "Improve performance, maintainability and visual consistency across internal and external insurance platforms.",
+    solution:
+      "Built pixel-perfect interfaces, optimized JavaScript applications, performed ongoing maintenance and applied web standards.",
+    results: ["Better web performance", "Consistent visual experience", "Greater accessibility and maintainability"]
+  },
+  "corporate-communication-digital-products": {
+    name: "Corporate Communication Digital Products",
+    description:
+      "Development of websites, newsletters, email marketing and motion graphics for corporate communication and advertising clients.",
+    challenge:
+      "Translate design, branding and communication goals into functional and visually consistent digital experiences.",
+    solution:
+      "Implemented responsive layouts, digital campaigns, motion graphics and websites focused on design, functionality and experience.",
+    results: ["Visually consistent digital experiences", "Greater impact in corporate communication", "Strong foundation between design and frontend"]
+  }
+};
+
+function getLocalizedProjects(locale: Locale) {
+  if (locale === "pt") return baseProjects;
+  return baseProjects.map((project) => ({
+    ...project,
+    ...projectTranslations[project.slug]
+  }));
+}
+
 export function getLocalizedData(locale: Locale): LocalizedData {
-  return locale === "en" ? en : pt;
+  return { ...(locale === "en" ? en : pt), projects: getLocalizedProjects(locale) };
 }
 
 export function getLocalizedArticle(locale: Locale, slug: string) {

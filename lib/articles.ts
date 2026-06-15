@@ -42,8 +42,8 @@ Quando a equipa olha para velocidade como qualidade de produto, as decisões de 
 `
   },
   {
-    slug: "acessibilidade-em-equipas-react",
-    title: "Acessibilidade em equipas React maduras",
+    slug: "acessibilidade-em-projetos-React",
+    title: "Acessibilidade em projetos React",
     description: "Como transformar acessibilidade num hábito de engenharia e não num checkpoint tardio.",
     date: "2026-03-04",
     category: "Accessibility",

@@ -53,14 +53,14 @@ export function ArticleClient({ slug, articlesByLocale }: { slug: string; articl
                 <p key={paragraph}>{paragraph}</p>
               ))}
           </div>
-          <Card className="mt-10 p-6">
+          {/* <Card className="mt-10 p-6">
             <h2 className="text-xl font-semibold">{t.blog.newsletterTitle}</h2>
             <p className="mt-3 text-muted-foreground">{t.blog.newsletterText}</p>
             <Button className="mt-5">
               <Send className="h-4 w-4" />
               {t.blog.subscribe}
             </Button>
-          </Card>
+          </Card> */}
           <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:justify-between">
             {adjacent.previous ? (
               <Button asChild variant="secondary">

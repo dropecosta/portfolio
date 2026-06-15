@@ -7,8 +7,36 @@ tags: [React, Next.js, TypeScript, DX]
 published: true
 ---
 
-Arquitetura frontend escalável começa com clareza de fronteiras. Componentes devem representar intenção de produto, enquanto detalhes técnicos ficam próximos do domínio que servem.
+## Introdução
 
-Uma boa base combina design tokens, contratos de dados previsíveis, testes nos fluxos críticos e uma estratégia de rendering que respeita a experiência do utilizador.
+Arquitetura frontend escalável começa por definir fronteiras claras entre domínio de produto e infraestrutura técnica. Componentes devem expressar intenção de produto — o que o utilizador vê e espera — enquanto a complexidade técnica fica encapsulada onde faz sentido.
 
-O objetivo não é criar abstrações perfeitas. É tornar a mudança mais barata, a revisão mais objetiva e o onboarding mais rápido.
+## Princípios essenciais
+
+- Design tokens para uma linguagem visual consistente.
+- Contratos de dados previsíveis entre camadas para evitar acoplamento.
+- Convenções de componentes que favoreçam reutilização sem impor dependências desnecessárias.
+
+Estas práticas reduzem o custo de mudança e tornam as revisões de código mais objetivas.
+
+## Estratégias de rendering
+
+Escolha entre SSR, SSG, ISR e client-side com base no custo para o utilizador e na criticidade da página. Abordagens híbridas geralmente trazem o melhor compromisso: conteúdo crítico servido rapidamente, interatividade entregue quando necessário.
+
+Documente por que cada padrão é usado e quando migrar entre eles.
+
+## Testes e qualidade
+
+Foque a cobertura nos fluxos críticos: testes unitários para lógica, testes de componente para a API pública dos componentes e E2E para jornadas de alto impacto. Integre verificações de performance e acessibilidade no pipeline de CI para evitar regressões.
+
+## Developer Experience (DX)
+
+Uma boa DX acelera a equipa: mantenha um Storybook organizado, templates de projeto, linting consistente e documentação de convenções. Essas ferramentas reduzem tempo de onboarding e diminuem variação acidental entre projetos.
+
+## Monitoramento e budgets
+
+Monitore erros, regressões de performance e tempo de build em produção. Defina budgets de performance e um processo claro para tratar regressões: identificar, priorizar e corrigir com responsáveis definidos.
+
+## Conclusão
+
+Prefira simplicidade pragmática nas abstrações. Soluções iterativas que diminuam o custo de mudança tendem a produzir sistemas mais resilientes e fáceis de evoluir.

@@ -42,7 +42,7 @@ export const dictionary = {
     home: {
       availability: "Disponível para consultoria frontend e full stack",
       intro:
-        "Mais de 10 anos a construir plataformas web para governo, transportes, telecomunicações, e-commerce, fintech e media, com foco em React, Next.js, TypeScript, performance, SEO e acessibilidade.",
+        "Mais de 10 anos a construir plataformas web para o setor público, transportes, telecomunicações, e-commerce, fintech e media, com foco em React, Next.js, TypeScript, performance, SEO e acessibilidade.",
       profileLabel: "Perfil de Senior Engineer",
       profileLine: "Frontend foundations, product systems and measurable performance.",
       stackEyebrow: "Stack principal",
@@ -135,7 +135,7 @@ export const dictionary = {
     home: {
       availability: "Available for frontend and full stack consulting",
       intro:
-        "Over 10 years building web platforms for government, transport, telecom, e-commerce, fintech and media, focused on React, Next.js, TypeScript, performance, SEO and accessibility.",
+        "Over 10 years building web platforms for the public sector, transport, telecom, e-commerce, fintech and media, focused on React, Next.js, TypeScript, performance, SEO and accessibility.",
       profileLabel: "Senior Engineer Profile",
       profileLine: "Frontend foundations, product systems and measurable performance.",
       stackEyebrow: "Core stack",

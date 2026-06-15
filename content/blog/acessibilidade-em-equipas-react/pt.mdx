@@ -1,5 +1,5 @@
 ---
-title: Acessibilidade em equipas React maduras
+title: Acessibilidade em projetos React
 description: Como transformar acessibilidade num hábito de engenharia e não num checkpoint tardio.
 date: 2026-03-04
 category: Accessibility
@@ -7,8 +7,27 @@ tags: [Accessibility, React, Design Systems]
 published: true
 ---
 
-Acessibilidade melhora quando deixa de depender de heroísmo individual. Componentes base devem carregar semântica, estados de foco, contraste e interações por teclado desde o início.
+## Introdução
 
-Em React, isto significa testar fluxos reais, usar HTML nativo sempre que possível e tratar componentes complexos com o mesmo rigor de uma API pública.
+Acessibilidade deixa de ser um checklist quando se torna prática diária de equipa. Componentes base devem incorporar semântica correta, estados de foco visíveis, contraste adequado e suporte completo à navegação por teclado desde o início.
 
-O resultado é uma experiência mais inclusiva, mas também uma base mais previsível para todos os utilizadores.
+## Princípios e práticas
+
+- Prefira HTML nativo sempre que possível e exponha APIs de componentes com padrões acessíveis por defeito.
+- Documente comportamentos esperados e propriedades que controlam labels, foco e estados auxiliares.
+
+## Testes e automação
+
+Automatize verificações com ferramentas como axe em testes unitários e E2E, e utilize Storybook para expor e validar estados visuais. Complementar com testes manuais (screen readers, teclado) garante cobertura real.
+
+## Governança e cultura
+
+Inclua acessibilidade na definição de pronto: PRs não devem introduzir regressões. Faça auditorias periódicas e acompanhe métricas (por exemplo, violações críticas) como indicadores de qualidade.
+
+## Formação e adoção
+
+Invista em formação prática: pair programming, workshops e exemplos reais. Diretrizes concisas e integrações no fluxo de trabalho aceleram a adoção por toda a equipa.
+
+## Conclusão
+
+Acessibilidade consistente reduz riscos legais, amplia audiência e melhora a experiência para todos os utilizadores, além de criar uma base mais previsível e sustentável.
