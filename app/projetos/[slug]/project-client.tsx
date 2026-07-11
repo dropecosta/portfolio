@@ -22,14 +22,23 @@ export function ProjectClient({ slug }: { slug: string }) {
           <div className="mt-8 grid gap-5">
             {[
               [t.projects.challenge, project.challenge],
-              [t.projects.solution, project.solution],
-              [t.projects.results, project.results.join(" · ")]
+              [t.projects.solution, project.solution]
             ].map(([title, text]) => (
               <Card key={title} className="p-6">
                 <h2 className="text-xl font-semibold">{title}</h2>
                 <p className="mt-3 leading-7 text-muted-foreground">{text}</p>
               </Card>
             ))}
+            <Card className="p-6">
+              <h2 className="text-xl font-semibold">{t.projects.results}</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-muted-foreground">
+                {project.results.map((result) => (
+                  <li key={result} className="leading-7">
+                    {result}
+                  </li>
+                ))}
+              </ul>
+            </Card>
           </div>
           {/* <div className="mt-8 aspect-[16/9] rounded-lg border border-border bg-hero-grid bg-[size:32px_32px] p-8">
             <div className="flex h-full items-end rounded-lg border border-border bg-surface/80 p-6">

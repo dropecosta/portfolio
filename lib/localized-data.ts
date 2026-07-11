@@ -587,143 +587,150 @@ const projectTranslations: Record<
     results: string[];
   }>
 > = {
-  "vodafone-digital-products": {
-    description:
-      "Development and continuous evolution of frontend solutions for Vodafone digital products, collaborating with the Celfocus team at GBL Tech.",
-    challenge:
-      "Evolve customer-facing interfaces in an enterprise environment while ensuring scalability, maintainability, performance and a consistent user experience.",
-    solution:
-      "Delivered new features, optimized digital journeys, structured frontend architecture and created reusable components.",
-    results: ["Smoother digital journeys", "Reusable and scalable UI patterns", "Performance, responsiveness and accessibility improvements"]
+ "vodafone-digital-products": {
+  description:
+    "Development and continuous evolution of Vodafone's digital products, building enterprise-grade frontend applications with React, TypeScript, Vite and a microfrontend architecture based on Module Federation.",
+  challenge:
+    "Deliver complex customer-facing digital journeys for contract signing while ensuring scalability, maintainability, internationalization, performance and seamless integration across distributed frontend applications.",
+  solution:
+    "Developed and evolved microfrontends using Vite and Module Federation, implemented multilingual customer journeys for digital contract signing, integrated Headless CMS content through Contentful, built reusable UI components, validated user documents and collaborated closely with product, UX/UI and backend teams to deliver scalable enterprise solutions.",
+  results: [
+    "Microfrontend architecture with Vite and Module Federation",
+    "End-to-end digital contract signing journeys",
+    "Headless CMS integration with Contentful",
+    "Internationalized application with multilingual support",
+    "Reusable and scalable component architecture",
+    "Improved performance, accessibility and maintainability"
+  ]
   },
   "comboios-de-portugal-pwa": {
     name: "Comboios de Portugal PWA",
     description:
-      "Development of the new Comboios de Portugal application, a React Progressive Web App designed to improve digital mobility services.",
+      "Development of the new Comboios de Portugal application, a React Progressive Web App designed to make schedules, ticketing and mobility services faster, more accessible and more reliable.",
     challenge:
-      "Create a fast, efficient and reliable experience for schedules, ticketing and mobile-first usage.",
+      "Create a fast, efficient mobile-first experience for schedules, ticketing and uninterrupted access to critical travel information, even while on the move.",
     solution:
-      "Implemented PWA capabilities, React development, real-time API integration, offline access and fast loading optimizations.",
-    results: ["Faster mobile experience", "Offline access through PWA", "More up-to-date schedule and ticketing information", "Stronger focus on accessibility"]
+      "Implemented PWA capabilities, React development, real-time API integration, offline access, mobile-first optimization and accessibility and performance improvements.",
+    results: ["Faster and more stable mobile experience", "Offline access through PWA", "More up-to-date schedule and ticketing information", "Better usability for travelers on the go"]
   },
   "radio-popular-ecommerce": {
     name: "Radio Popular E-commerce",
     description:
-      "Development and optimization of Radio Popular's e-commerce platform, one of Portugal's leading electronics and home appliance retailers.",
+      "Development and optimization of Radio Popular's e-commerce platform, with a focus on product discovery, frontend performance and shopping experience for one of Portugal's leading electronics retailers.",
     challenge:
-      "Improve an e-commerce platform with focus on responsiveness, search, smart filters and shopping experience.",
+      "Improve a large e-commerce platform by strengthening responsiveness, search, smart filters, SEO and the overall shopping experience across devices.",
     solution:
-      "Implemented dynamic features, advanced search, smart filters, performance optimizations and close collaboration with UI/UX.",
-    results: ["Smoother shopping experience", "More efficient search and filters", "Better loading times", "More intuitive and accessible interface"]
+      "Implemented dynamic features, advanced search, smart filters, performance optimizations and close collaboration with UI/UX to reduce friction in browsing and product discovery.",
+    results: ["Smoother shopping experience", "More efficient search and filters", "Better loading and navigation speed", "More intuitive and accessible interface"]
   },
   "citizen-services-platform": {
     name: "Portal Unico - E-Portugal",
     description:
       "Contribution to the new version of Portal Unico - E-Portugal, a key public platform designed to modernize and simplify access to digital services in Portugal.",
     challenge:
-      "Evolve a high-visibility government platform while ensuring accessibility, performance, technical quality and a clear citizen experience.",
+      "Evolve a high-visibility government platform while ensuring accessibility, performance, technical quality and a clear experience for citizens across different usage contexts.",
     solution:
-      "Developed frontend interfaces with Next.js, TypeScript and ES6+, applied agile practices with Jira, improved performance and accessibility, and added unit testing.",
-    results: ["More accessible public digital services", "Improved performance and user experience", "Greater stability through unit testing"]
+      "Developed frontend interfaces with Next.js, TypeScript and ES6+, applied agile practices with Jira, improved performance and accessibility, and added unit testing to strengthen stability and delivery confidence.",
+    results: ["More accessible public digital services", "Improved performance and user experience", "Greater stability through unit testing", "A more modern and maintainable frontend foundation"]
   },
   "ama-public-services-ignit": {
     name: "AMA Public Digital Services",
     description:
-      "Collaboration with AMA through IGNIT on public digital services, focused on React, Next.js, accessibility, performance and user experience.",
+      "Collaboration with AMA through IGNIT on public digital services, focused on building modern, accessible and sustainable interfaces with React, Next.js and TypeScript.",
     challenge:
-      "Build modern and inclusive public interfaces while preserving quality, visual consistency and capacity to evolve.",
+      "Build modern and inclusive public interfaces while preserving quality, visual consistency, performance and room for continuous evolution in an agile delivery environment.",
     solution:
-      "Created responsive and maintainable components, used Storybook, agile practices, performance optimization and unit testing.",
-    results: ["More accessible public interfaces", "More consistent frontend components", "Higher delivery quality and reliability"]
+      "Created responsive and maintainable components, used Storybook, Tailwind and BEM, added unit tests and followed agile practices to reinforce quality, reuse and performance.",
+    results: ["More accessible public interfaces", "More consistent frontend components", "Higher delivery quality and reliability", "A stronger foundation for ongoing product evolution"]
   },
   "contentful-saas-platform": {
     name: "Contentful SaaS Platform",
     description:
-      "Feature development and frontend architecture work for Contentful's global SaaS platform during the collaboration with Capgemini Engineering.",
+      "Feature development and frontend architecture work for Contentful's global SaaS platform, contributing to a more scalable, usable and consistent product experience.",
     challenge:
-      "Evolve a global headless CMS platform with strong scalability, usability and UX alignment requirements.",
+      "Evolve a global headless CMS platform with demanding expectations around scalability, usability, performance and alignment between engineering, UX and product.",
     solution:
-      "Implemented new features, defined technical standards, optimized performance and collaborated with multidisciplinary teams.",
-    results: ["More scalable frontend architecture", "Usability and performance improvements", "Evolution of a SaaS product used by global enterprises"]
+      "Implemented new features in React and TypeScript, defined technical standards, improved performance, reinforced testing and collaborated closely with multidisciplinary teams.",
+    results: ["More scalable frontend architecture", "Usability and performance improvements", "More consistent delivery in a global SaaS environment", "Continued evolution of a product used by global enterprises"]
   },
   "alelo-benefits-dashboard": {
     name: "Alelo Benefits Dashboard",
     description:
-      "Development of rich interfaces and dashboards to monitor revenue, consumption frequency, sales and business metrics at Alelo Benefits.",
+      "Development of rich interfaces and dashboards to monitor revenue, consumption frequency, sales and business metrics at Alelo Benefits, with a strong focus on data-driven decision-making.",
     challenge:
-      "Improve data visualization and management of critical indicators for benefits and financial clients.",
+      "Improve data visualization and management of critical indicators for benefits and financial clients while preserving technical quality and reliability.",
     solution:
-      "Delivered new features, frontend architecture, best practices, automated tests, CI/CD and collaboration with UX, product and backend.",
-    results: ["More interactive dashboards", "Better decision-making for clients", "Greater maintainability, scalability and technical quality"]
+      "Delivered new features, defined frontend architecture, applied best practices, added automated tests and CI/CD, and collaborated closely with UX, product and backend teams.",
+    results: ["More interactive and scalable dashboards", "Better decision-making for clients", "Higher technical quality and stability", "A stronger foundation for evolving business metrics"]
   },
   "ativa-investimentos-onboarding": {
     name: "Ativa Investimentos Onboarding",
     description:
-      "Creation of a simple, frictionless registration experience for customers of an investment brokerage.",
+      "Creation of a simple, frictionless registration experience for customers of an investment brokerage, reducing barriers in financial onboarding.",
     challenge:
-      "Simplify financial onboarding from registration to account activation while preserving performance and accessibility.",
+      "Simplify financial onboarding from registration to account activation while preserving performance, accessibility and alignment between UX and engineering.",
     solution:
-      "Improved frontend architecture, developed new features, provided technical mentoring and integrated frontend and backend services.",
-    results: ["More intuitive registration flow", "Better onboarding performance", "Stronger alignment between UX and engineering"]
+      "Improved the frontend architecture, developed new features in Vue.js, provided technical mentoring and integrated frontend and backend services to reduce registration friction.",
+    results: ["More intuitive registration flow", "Better onboarding performance", "Stronger alignment between UX and engineering", "Smoother activation experience"]
   },
   "oi-fibra-hotsite": {
     name: "Oi Fibra Hotsite",
     description:
-      "Development of the Oi Fibra hotsite with React, Next.js and Atomic Design for a large telecommunications platform in Brazil.",
+      "Development of the Oi Fibra hotsite with React, Next.js and Atomic Design for a major telecommunications platform in Brazil, with a focus on performance, SEO and reusable components.",
     challenge:
-      "Create a modular and reusable foundation with strong performance, SEO and maintainability for a high-reach platform.",
+      "Create a modular and reusable foundation with strong performance, SEO, SSR and maintainability for a high-reach platform with significant digital visibility.",
     solution:
-      "Built modular frontend architecture, SSR with Next.js, code documentation and agile collaboration with stakeholders.",
+      "Built modular frontend architecture, SSR with Next.js, documented the codebase, used Atomic Design principles and collaborated closely with stakeholders in an agile setup.",
     results: ["Better performance and SEO", "More scalable component architecture", "More robust digital experience for telecommunications"]
   },
   "globoplay-smart-tv": {
     name: "Globoplay Smart TV",
     description:
-      "Feature development for Globoplay's Smart TV application, one of Brazil's leading on-demand streaming platforms.",
+      "Feature development for Globoplay's Smart TV application, focused on a smoother streaming experience and compatibility across different manufacturers and device models.",
     challenge:
-      "Improve the viewing experience across different Smart TV models while ensuring compatibility and fluidity.",
+      "Improve the viewing experience across different Smart TV models while ensuring compatibility, navigation fluidity and stability on real devices.",
     solution:
-      "Developed new features, ran functional tests on TV devices and integrated GraphQL/Apollo Client.",
+      "Developed new features, ran functional tests on real TV devices and integrated GraphQL with Apollo Client to support a more consistent experience.",
     results: ["Smoother streaming experience", "Greater device compatibility", "Interface optimized for Smart TVs"]
   },
   "petrobras-drilling-dashboard": {
     name: "Petrobras Drilling Dashboard",
     description:
-      "Solutions for well planning, drilling operations and production management for Petrobras through GTEP/PUC-RJ.",
+      "Solutions for well planning, drilling operations and production management for Petrobras through GTEP/PUC-RJ, translating complex technical workflows into a data-rich web experience.",
     challenge:
-      "Transform a desktop application into a rich web solution with real-time dashboards for critical engineering operations.",
+      "Transform a desktop application into a rich web solution with real-time dashboards for critical engineering operations and multidisciplinary teams.",
     solution:
-      "Developed a web application for monitoring, reports, bug tracking and operational data visualization.",
+      "Developed a web application with Angular and TypeScript for monitoring, reporting, bug tracking and real-time operational data visualization.",
     results: ["Real-time operational data", "Greater efficiency in drilling operations", "Clearer communication between engineering teams"]
   },
   "oi-consumer-account-platform": {
     name: "Oi Consumer Account Platform",
     description:
-      "Development of a public consumer application for Oi users to manage profiles, accounts and settings through a clear interface.",
+      "Development of a public consumer application for Oi users to manage profiles, accounts and settings through a clear interface designed for high user volume.",
     challenge:
-      "Create an accessible, reusable cross-platform experience for millions of users.",
+      "Create an accessible, reusable cross-platform experience for millions of users while balancing interface consistency and product evolution.",
     solution:
-      "Developed React components, worked with Angular/Ionic, Storybook and Atomic Design patterns to scale the UI.",
-    results: ["Simpler account management", "Reusable components", "Accessible and cross-platform experience"]
+      "Developed React components, worked with Angular, Ionic, Storybook and Atomic Design patterns to scale the UI and support self-service journeys.",
+    results: ["Simpler account management", "Reusable components", "Accessible and cross-platform experience", "A more consistent foundation for app evolution"]
   },
   "bradesco-seguros-web-platforms": {
     name: "Bradesco Seguros Web Platforms",
     description:
-      "Development and optimization of intranets and customer-facing web applications for Bradesco Seguros during the Ebix experience.",
+      "Development and optimization of intranets and customer-facing web applications for Bradesco Seguros, with a focus on performance, visual consistency and long-term maintainability.",
     challenge:
-      "Improve performance, maintainability and visual consistency across internal and external insurance platforms.",
+      "Improve performance, maintainability and visual consistency across internal and external insurance platforms while supporting stable operations in legacy environments.",
     solution:
-      "Built pixel-perfect interfaces, optimized JavaScript applications, performed ongoing maintenance and applied web standards.",
+      "Built pixel-perfect interfaces, optimized JavaScript applications, performed ongoing maintenance and applied web standards for stronger stability and usability.",
     results: ["Better web performance", "Consistent visual experience", "Greater accessibility and maintainability"]
   },
   "corporate-communication-digital-products": {
     name: "Corporate Communication Digital Products",
     description:
-      "Development of websites, newsletters, email marketing and motion graphics for corporate communication and advertising clients.",
+      "Development of websites, newsletters, email marketing and motion graphics for corporate communication and advertising clients, combining visual design and frontend implementation.",
     challenge:
-      "Translate design, branding and communication goals into functional and visually consistent digital experiences.",
+      "Translate design, branding and communication goals into functional, responsive and visually consistent digital experiences.",
     solution:
-      "Implemented responsive layouts, digital campaigns, motion graphics and websites focused on design, functionality and experience.",
+      "Implemented responsive layouts, digital campaigns, motion graphics and websites with a focus on design, functionality and user experience.",
     results: ["Visually consistent digital experiences", "Greater impact in corporate communication", "Strong foundation between design and frontend"]
   }
 };
