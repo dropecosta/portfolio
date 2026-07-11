@@ -17,7 +17,7 @@ export function SiteHeader() {
     [t.nav.projects, "/projetos"],
     [t.nav.experience, "/experiencia"],
     [t.nav.skills, "/skills"],
-    [t.nav.blog, "/blog"]
+    // [t.nav.blog, "/blog"]
   ];
 
   return (
@@ -38,9 +38,9 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-          <CommandMenu />
-          <div className="hidden items-center gap-2 sm:flex">
+        <div className="flex items-center">
+          {/* <CommandMenu /> */}
+          <div className="hidden items-center sm:flex">
             <LanguageToggle />
             <ThemeToggle />
           </div>
@@ -63,7 +63,7 @@ export function SiteHeader() {
       {mobileOpen ? (
         <div className="border-t border-border/70 bg-background/95 px-4 py-4 shadow-glow lg:hidden">
           <div className="mx-auto grid max-w-6xl gap-3">
-            <CommandMenu buttonClassName="flex h-10 w-full justify-start md:flex" />
+            {/* <CommandMenu buttonClassName="flex h-10 w-full justify-start md:flex" /> */}
             <nav className="grid gap-1">
               {nav.map(([label, href]) => (
                 <Link
